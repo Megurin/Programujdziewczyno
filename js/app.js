@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       buttons[0].addEventListener('click', function() {
+      	var textArea = this.previousElementSibling;
+      	
       	if (textArea.style.display === 'none' || textArea.style.display === '') {
       	textArea.style.display = 'block';
         this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
